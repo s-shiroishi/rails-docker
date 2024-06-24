@@ -16,4 +16,10 @@ git clone を行ったフォルダで以下のコマンドを実行してコン�
 docker compose up
 ```
 
+## DB の初期化
+
+```
+docker-compose exec rails rake db:create db:migrate db:seed
+```
+
 http://localhost:3000 にアクセスすれば rails にアクセス出来る。
